@@ -1,19 +1,22 @@
 package com.company;
 
-import javax.swing.*;
-import java.awt.*;
+
 import java.util.Scanner;
 public class restauranteMuerteLenta {
 
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
         int plato , propina, numeroPersonas, contadorHamburguesa = 0, contadorPerros = 0, contadorSalchipapa = 0, contadorChorizo = 0;
-        double total = 0, descuento1 = 0, descuento2 = 0, totalConDescuentoYpropina = 0, totalDescuentoSinpropina = 0, totalFinal = 0;
+        double total, descuento1, descuento2, totalConDescuentoYpropina, totalDescuentoSinpropina, totalFinal;
         System.out.println("Digite el numero de personas: ");
         numeroPersonas = Integer.parseInt(inputData.nextLine());
         for (int i = 0; i < numeroPersonas; i++) {
             System.out.println("Digite el plato que la persona " + (i+1) + " va a ordenar:\n\nNuestro menu: \n1- Hamburguesa \n2- Perro \n3- Salchipapas \n4- Chorizo   ");
             plato = Integer.parseInt(inputData.nextLine());
+            while (plato != 1 && plato != 2 && plato != 3 && plato != 4){
+                System.out.println("\nEl plato no se encutra dentro del menu...\n \nDigite el plato que la persona " + (i+1) +  " va a ordenar:\n\nNuestro menu: \n1- Hamburguesa \n2- Perro \n3- Salchipapas \n4- Chorizo");
+                plato = Integer.parseInt(inputData.nextLine());
+            }
             if (plato == 1){
                 contadorHamburguesa++;
             }
