@@ -10,6 +10,9 @@ public class Estudiantes {
     private  double promedioFinal[] = new double[cantidadEstudiantes];
     private int contador = 0;
     
+    public void mostrarGetCantidadEstudiantes(){
+        System.out.println(getCantidadEstudiantes());
+    }
     
     public String [] getNombres(){
         return nombres;

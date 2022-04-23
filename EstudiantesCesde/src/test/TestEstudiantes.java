@@ -14,6 +14,7 @@ public class TestEstudiantes {
         cantidadEstudiantes = Integer.parseInt(inputData.nextLine());
         estudiante.setCantidadEstudiantes(cantidadEstudiantes);
         nombres = new String [estudiante.getCantidadEstudiantes()];
+        estudiante.mostrarGetCantidadEstudiantes();
         
         for (int i = 0; i < estudiante.getCantidadEstudiantes(); i++) {
             System.out.println("Digite el nombre del estudiante: ");
