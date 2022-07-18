@@ -65,6 +65,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:backgroundTint="#003c8f"
+                android:onClick="regresar"
                 android:text="Regresar"
                 app:cornerRadius="50dp" />
 
